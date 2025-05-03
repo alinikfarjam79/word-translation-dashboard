@@ -3,7 +3,7 @@ import { Draggable } from "@hello-pangea/dnd";
 import { useContext } from "react";
 import TranslationContext from "@/context/TranslationContext";
 
-const KeywordItem = ({ keyword, index }) => {
+const KeyWordItem = ({ keyword, index }) => {
   const { language, updateTranslation } = useContext(TranslationContext);
   return (
     <Draggable draggableId={keyword.id} index={index} key={keyword.id}>
@@ -34,4 +34,4 @@ const KeywordItem = ({ keyword, index }) => {
   );
 };
 
-export default KeywordItem;
+export default KeyWordItem;

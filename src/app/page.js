@@ -4,7 +4,7 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { useContext } from 'react';
 import TranslationContext from '@/context/TranslationContext';
 import LanguageSelector from '@/components/LanguageSelector';
-import KeywordItem from '@/components/KeyWrodItem';
+import KeyWordItem from '@/components/KeyWordItem';
 import AddKeywordButton from '@/components/AddKeyWordButton';
 
 const ManagementDashboard = () => {
@@ -21,7 +21,7 @@ const ManagementDashboard = () => {
             {(provided) => (
               <div {...provided.droppableProps} ref={provided.innerRef}>
                 {keywords.map((kw, index) => (
-                  <KeywordItem key={kw.id} keyword={kw} index={index} />
+                  <KeyWordItem key={kw.id} keyword={kw} index={index} />
                 ))}
                 {provided.placeholder}
               </div>
