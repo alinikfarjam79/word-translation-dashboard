@@ -17,7 +17,7 @@ const PublicView = () => {
           </h1>
           <LanguageSelector className="mt-2" />
         </div>
-        <div className="h-[540px] w-full overflow-auto flex flex-col justify-center items-center">
+        <div className="h-[540px] w-full  overflow-auto flex flex-col justify-center items-center">
           <DragDropContext onDragEnd={onDragEnd}>
             <Droppable droppableId="droppable">
               {(provided) => (
